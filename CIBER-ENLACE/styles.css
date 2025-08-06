@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  padding: 0px;
+  background-color: #03000f;
+  border-bottom: 1px solid #ddd;
+}
+
+/*Logo*/
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+/*Titulo*/
+.site-header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  color: rgb(70, 68, 68)(5, 60, 60);
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 3px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: white;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  max-width: 300px;
+  margin-right: 30px;
+  border-radius: 8px;
+}
+
+.product-details {
+  max-width: 500px;
+}
+
+.product-details h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 14px;
+}
+
+/*Barra Horizontal*/
+.menu-principal {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #106cad;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal > li {
+  position: relative;
+}
+
+.menu-principal > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #106cad;
+}
+
+.menu-principal > li > a:hover {
+  background-color: #005fa3;
+}
+
+/*Submenu oculto por defecto*/
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0077cc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+/*Mostrar menu al pasar el raton*/
+.menu-principal li:hover .submenu {
+  display: block;
+}
+
+/*Estilo de los items del menu*/
+.submenu li a {
+  display: block;
+  padding: 12px 16px;
+  color:white;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #005fa3;
+}
+
+/*Info*/
+.info {
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 10px;
+}
